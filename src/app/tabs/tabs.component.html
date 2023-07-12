@@ -1,0 +1,10 @@
+<ul ngbNav #nav="ngbNav" class="nav-tabs" [(activeId)]="active" (shown)="onShown($event)">
+    <li ngbNavItem *ngFor="let tab of tabs; let sr = index" [disabled]="tab.disabled" [ngbNavItem]="sr">
+        <a ngbNavLink>{{tab.tabTitle}}</a>
+        <ng-template ngbNavContent>
+            <ng-content></ng-content>
+        </ng-template>
+    </li>
+</ul>
+
+<div [ngbNavOutlet]="nav" class="mt-2"></div>
