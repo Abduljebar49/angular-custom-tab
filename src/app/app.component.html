@@ -1,3 +1,5 @@
+
+<p style="font-size: 32px">Tab Example</p>
 <tabs>
   <tab tabTitle="Tab 1">
     this is content of tab1
@@ -6,21 +8,6 @@
     this is another tab content
   </tab>
 </tabs>
-
-<h1>Disabled tab example</h1>
-<tabs>
-  <tab tabTitle="Tab 1">
-    this is content of tab1
-  </tab>
-  <tab tabTitle="Tab 2">
-    this is another tab content
-  </tab>
-  <tab tabTitle="Tab 2" disabled="true">
-    this is another tab content
-  </tab>
-
-</tabs>
-
 
 <h1>Auto Switch to another tab</h1>
 <tabs [active]="2">
@@ -30,8 +17,21 @@
   <tab tabTitle="Tab 2">
     this is another tab content
   </tab>
-  <tab tabTitle="Tab 2" disabled="true">
+  <tab tabTitle="Tab 3">
+    this is another tab content of tab 3
+  </tab>
+</tabs>
+
+
+<h1>Disabled tab example</h1>
+<tabs>
+  <tab tabTitle="Tab 1">
+    this is content of tab1
+  </tab>
+  <tab tabTitle="Tab 2">
     this is another tab content
   </tab>
-
+  <tab tabTitle="Tab 3" [disabled]="isDisabled">
+    this is another tab content
+  </tab>
 </tabs>
