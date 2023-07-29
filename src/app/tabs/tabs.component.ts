@@ -13,7 +13,8 @@ export class TabsComponent {
   @Input() active: number = 0;
 
   addTab(tab: TabComponent) {
-    if (this.tabs.length === 0) {
+    //this line adds tab and set the property show for tab component
+    if (this.tabs.length === this.active) {
       tab.show = true;
     } else {
       tab.show = false;
