@@ -1,12 +1,10 @@
 import { AfterViewInit, Component, Input, OnInit } from "@angular/core";
 import { TabComponent } from "../tab/tab.component";
-import { NgbNavConfig, NgbNavModule } from "@ng-bootstrap/ng-bootstrap";
 
 @Component({
   selector: "tabs",
   templateUrl: "./tabs.component.html",
 })
-
 
 export class TabsComponent {
   tabs: TabComponent[] = [];
