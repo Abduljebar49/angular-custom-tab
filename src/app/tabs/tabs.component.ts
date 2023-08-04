@@ -6,13 +6,13 @@ import { TabComponent } from "../tab/tab.component";
   templateUrl: "./tabs.component.html",
 })
 
+
 export class TabsComponent {
   tabs: TabComponent[] = [];
   @Input() active: number = 0;
 
   addTab(tab: TabComponent) {
-    //this line adds tab and set the property show for tab component
-    if (this.tabs.length === this.active) {
+    if (this.tabs.length === 0) {
       tab.show = true;
     } else {
       tab.show = false;
