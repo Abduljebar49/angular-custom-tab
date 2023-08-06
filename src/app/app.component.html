@@ -1,36 +1,51 @@
+<div class="container">
+  <p style="font-size: 32px; margin-top: 50px;">Filled Tab Example</p>
+  <tabs [fill]="true">
+    <tab tabTitle="Tab 1">
+      this is content of tab1
+    </tab>
+    <tab tabTitle="Tab 2">
+      this is another tab content
+    </tab>
+    <tab tabTitle="Tab 3">
+      this is another tab 3 content
+    </tab>
+  </tabs>
 
-<p style="font-size: 32px">Tab Example</p>
-<tabs>
-  <tab tabTitle="Tab 1">
-    this is content of tab1
-  </tab>
-  <tab tabTitle="Tab 2">
-    this is another tab content
-  </tab>
-</tabs>
+  <p style="font-size: 32px; margin-top: 50px;">Tab Example</p>
+  <tabs>
+    <tab tabTitle="Tab 1">
+      this is content of tab1
+    </tab>
+    <tab tabTitle="Tab 2">
+      this is another tab content
+    </tab>
+  </tabs>
 
-<p style="font-size: 32px">Auto Switch to another tab</p>
-<tabs [active]="2">
-  <tab tabTitle="Tab 1">
-    this is content of tab1
-  </tab>
-  <tab tabTitle="Tab 2">
-    this is another tab content
-  </tab>
-  <tab tabTitle="Tab 3">
-    this is another tab content of tab 3
-  </tab>
-</tabs>
+  <p style="font-size: 32px; margin-top: 50px;">Auto Switch to another tab</p>
+  <tabs [active]="2">
+    <tab tabTitle="Tab 1">
+      this is content of tab1
+    </tab>
+    <tab tabTitle="Tab 2">
+      this is another tab content
+    </tab>
+    <tab tabTitle="Tab 3">
+      this is another tab content of tab 3
+    </tab>
+  </tabs>
 
-<p style="font-size: 32px">Disabled tab example</p>
-<tabs>
-  <tab tabTitle="Tab 1">
-    this is content of tab1
-  </tab>
-  <tab tabTitle="Tab 2">
-    this is another tab content
-  </tab>
-  <tab tabTitle="Tab 3" [disabled]="isDisabled">
-    this is another tab content
-  </tab>
-</tabs>
+  <p style="font-size: 32px; margin-top: 50px;">Disabled tab example</p>
+  <tabs>
+    <tab tabTitle="Tab 1">
+      this is content of tab1
+    </tab>
+    <tab tabTitle="Tab 2">
+      this is another tab content
+    </tab>
+    <tab tabTitle="Tab 3" [disabled]="isDisabled">
+      this is another tab content
+    </tab>
+  </tabs>
+
+</div>

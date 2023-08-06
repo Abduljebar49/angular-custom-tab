@@ -34,7 +34,7 @@ import { NgbNavConfig, NgbNavModule } from "@ng-bootstrap/ng-bootstrap";
 export class TabsComponent {
   tabs: TabComponent[] = [];
   @Input() active: number = 0;
-
+  @Input() fill:boolean = false;
   addTab(tab: TabComponent) {
     if (this.tabs.length === 0) {
       tab.show = true;
